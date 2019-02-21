@@ -1,9 +1,13 @@
 .hero {
 height:95vh;
-background-image: url(../img/hero2.png);
+background-image: url(../img/herosm.png);
 @include bg;
 background-attachment: fixed;
 position: relative;
+@include mq (small) {
+background-image: url(../img/hero2.png);
+
+}
 @include mq(medium) {
 @include container($width: 90%);
 }
