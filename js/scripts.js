@@ -32,8 +32,8 @@ function scrollFunction() {
     
   } 
 
-  else if (screen.width <=850)  {
-    document.querySelector("nav").style.top = "0";
+  else if (screen.width < 450)  {
+    document.querySelector("nav").style.top = "0vh";
     console.log("test")
   }
  

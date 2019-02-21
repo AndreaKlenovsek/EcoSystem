@@ -10,9 +10,9 @@ height: 95vh;
 
 transition: left ease-in-out 350ms;
 overflow-x: hidden;
-@include mq(medium) {
+@include mq(small) {
 left: 0;
-top: -7vh;
+top: 0;
 position: fixed;
 height: 7vh;
 transition: top .3s;
@@ -27,7 +27,7 @@ display: flex;
 flex-direction: column;
 height: 95vh;
 
-@include mq(medium) {
+@include mq(small) {
 flex-direction: row;
 height: 7vh;
 }
@@ -42,7 +42,7 @@ border-bottom: 1px solid rgba($clr-orange, .4);
 border-bottom: none;
 }
 
-@include mq(medium) {
+@include mq(small) {
 border:none;
 }
 }
@@ -55,9 +55,9 @@ justify-content: center;
 align-items: center;
 flex-basis: 100%;
 font-size: 1.2rem;
-color: green(medium);
+color: green(small);
 transition: background 350ms;
-@include mq(medium) {
+@include mq(small) {
 font-weight: $fw-bold;
 }
 
@@ -72,8 +72,8 @@ background: darken($clr-yellow, 6);
 height: 100px;
 width: 100px;
 position: relative;
-top: 0.5em;
-left: 0.5em;
+top: 0;
+left: 0;
 
 }
 
@@ -82,17 +82,20 @@ display: none;
 }
 
 .icon-open {
-@include mq(medium) {
+@include mq(small) {
 display: none;
 }
 }
 
 .nav-is-open {
 nav {
-left: 25%;
+left: 27%;
 display: block;
-@include mq(medium) {
+top: 0;
+overflow-y: hidden;
+@include mq(small) {
 left: 0;
+
 }
 
 }
@@ -103,7 +106,7 @@ display: none;
 
 .icon-close {
 display: block;
-@include mq(medium) {
+@include mq(small) {
 display: none;
 }
 }

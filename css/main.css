@@ -30,10 +30,10 @@ nav {
   transition: left ease-in-out 350ms;
   overflow-x: hidden;
 }
-@media (min-width: 850px) {
+@media (min-width: 450px) {
   nav {
     left: 0;
-    top: -7vh;
+    top: 0;
     position: fixed;
     height: 7vh;
     transition: top 0.3s;
@@ -47,7 +47,7 @@ nav ul {
   flex-direction: column;
   height: 95vh;
 }
-@media (min-width: 850px) {
+@media (min-width: 450px) {
   nav ul {
     flex-direction: row;
     height: 7vh;
@@ -61,7 +61,7 @@ nav li {
 nav li:last-of-type {
   border-bottom: none;
 }
-@media (min-width: 850px) {
+@media (min-width: 450px) {
   nav li {
     border: none;
   }
@@ -74,10 +74,9 @@ nav a {
   align-items: center;
   flex-basis: 100%;
   font-size: 1.2rem;
-  color: #439e47;
   transition: background 350ms;
 }
-@media (min-width: 850px) {
+@media (min-width: 450px) {
   nav a {
     font-weight: 700;
   }
@@ -90,25 +89,27 @@ nav a:hover, nav a:focus {
   height: 100px;
   width: 100px;
   position: relative;
-  top: 0.5em;
-  left: 0.5em;
+  top: 0;
+  left: 0;
 }
 
 .icon-close {
   display: none;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 450px) {
   .icon-open {
     display: none;
   }
 }
 
 .nav-is-open nav {
-  left: 25%;
+  left: 27%;
   display: block;
+  top: 0;
+  overflow-y: hidden;
 }
-@media (min-width: 850px) {
+@media (min-width: 450px) {
   .nav-is-open nav {
     left: 0;
   }
@@ -119,7 +120,7 @@ nav a:hover, nav a:focus {
 .nav-is-open .icon-close {
   display: block;
 }
-@media (min-width: 850px) {
+@media (min-width: 450px) {
   .nav-is-open .icon-close {
     display: none;
   }
