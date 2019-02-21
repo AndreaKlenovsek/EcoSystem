@@ -1,0 +1,39 @@
+// Media query
+
+$breakpoints: (
+small: 450px,
+medium: 850px,
+large: 1200px,
+xl: 1800px,
+);
+
+
+@mixin mq($size) {
+@if map-has-key($breakpoints, $size) {
+$breakpoint: map-get($breakpoints, $size);
+@media(min-width: $breakpoint) {
+@content;
+}
+}
+@else if type-of($size) == number and not unitless($size) {
+@media(min-width: $size) {
+@content;
+}
+}
+@else {
+@error "you entered #{$size} this map-key is non-existent or unitless"
+}
+}
+
+// Background
+@mixin bg {
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+// Container
+@mixin container($width){
+max-width: $width;
+margin: 0 auto;
+}

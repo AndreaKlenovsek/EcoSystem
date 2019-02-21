@@ -1,0 +1,10 @@
+@function green($shade) {
+$value: map-get($greens, $shade);
+@return $value;
+}
+
+
+@function blue($shade) {
+$value: map-get($blues, $shade);
+@return $value;
+}
