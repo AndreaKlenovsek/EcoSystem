@@ -1,4 +1,97 @@
 .animals {
 padding: 4em 0;
 background: #439e47;
+
+
+&__title {
+color: $clr-yellow;
+text-align: center;
+text-transform: uppercase;
+font-size: 1.2rem;
+letter-spacing: 2px;
+
+@include mq(medium) {
+font-size: 1.8rem;
+}
+}
+}
+
+.cards {
+display: grid;
+text-align: center;
+margin: 1em;
+
+
+@include mq(medium) {
+grid-template-columns: repeat(3,1fr);
+grid-column-gap: 1em;
+}
+}
+
+.card__bg {
+padding: .5em;
+background: $clr-yellow;
+
+max-width: 25em;
+margin: 1em auto;
+}
+
+.card__bg2 {
+background: $clr-orange;
+padding: .5em;
+background: $clr-orange;
+
+max-width: 25em;
+margin: 1em auto;
+}
+
+.card {
+background: #68bc68;
+padding: 3em 1.5em;
+position: relative;
+
+
+&__title {
+color: $clr-title;
+letter-spacing: 2px;
+}
+
+&__text {
+color: rgba($clr-yellow, .9);
+padding: .5em;
+}
+}
+
+.deco {
+position: relative;
+top: -1em;
+}
+
+.btn-card1, .btn-card2 {
+text-decoration: none;
+text-transform: uppercase;
+letter-spacing: 2px;
+padding: .8em 1.5em;
+display: inline-block;
+margin-top: 1em;
+}
+
+.btn-card1 {
+background: $clr-yellow;
+color: rgba($clr-title, .7);
+transition: background 350ms;
+
+&:hover, &:focus {
+background: darken($clr-yellow, 5)
+} 
+}
+
+.btn-card2 {
+background: $clr-orange;
+color: rgba($clr-title, .7);
+transition: background 350ms;
+
+&:hover, &:focus {
+background: darken($clr-orange, 5)
+} 
 }

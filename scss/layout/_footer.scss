@@ -1,8 +1,33 @@
 footer {
 position: relative;
 background: #c8f4b3;
-height: 80vh;
+height: 30vh;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+font-family: $ff-permanent;
+@include mq(medium) {
+height: 70vh;
 }
+
+h2 {
+font-size:  1.3rem;
+@include mq(medium) {
+font-family: $ff-permanent;
+font-size: 2rem;
+}
+}
+}
+
+.footer__text {
+font-size: .8rem;
+padding-top: 1em;
+}
+
+
 
 .fot-img {
 position: absolute;
