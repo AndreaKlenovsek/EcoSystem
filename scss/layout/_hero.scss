@@ -9,7 +9,7 @@ background-image: url(../img/hero2.png);
 
 }
 @include mq(medium) {
-@include container($width: 90%);
+
 }
 }
 

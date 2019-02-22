@@ -4,7 +4,7 @@ $breakpoints: (
 small: 450px,
 medium: 850px,
 large: 1200px,
-xl: 1800px,
+xl: 1400px,
 );
 
 
@@ -36,4 +36,18 @@ background-repeat: no-repeat;
 @mixin container($width){
 max-width: $width;
 margin: 0 auto;
+}
+
+
+// ¨Pseudo
+
+@mixin line($width: 30%, $bg: currentColor) {
+&::after {
+content: '';
+height: 1px;
+width: $width;
+background: $bg;
+display: block;
+margin: 0 auto;
+}
 }

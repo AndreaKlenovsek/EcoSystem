@@ -1,6 +1,6 @@
 footer {
 position: relative;
-
+background: #c8f4b3;
 height: 80vh;
 }
 
@@ -17,20 +17,21 @@ bottom: 0;
     right: 0em;
     display: none;
 
-
     @include mq (large) {
-        bottom: 2.5em;
-        display: block;
-        height: 80px;
-        width: 150px;
-        }
+    bottom: 2em;
+    display: block;
+    height: 85px;
+    width: 160px;
+    }
 
-        @include mq (xl) {
-            bottom: 4em;
+    @include mq (xl) {
+    bottom: 3em;
+    height: 90px;
+    width: 180px;
            
-            width: 200px;
-            height: 100px;
-            }
+      
+    }
+
     
 
 }

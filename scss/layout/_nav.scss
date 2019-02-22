@@ -32,6 +32,10 @@ height: 95vh;
 flex-direction: row;
 height: 7vh;
 }
+@include mq(medium) {
+@include container($width: 80%);
+}
+
 }
 
 li {

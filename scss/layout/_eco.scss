@@ -1,0 +1,37 @@
+.eco-systems {
+background-color: $clr-yellow;
+min-height: 60vh;
+@include mq(medium) {
+min-height: 300px;
+@include bg;
+background-image: url(../img/info2.png);
+background-color: #439e47;
+}
+}
+
+.systems {
+
+display: grid;
+text-align: center;
+padding: 1em 1em;
+@include mq(medium) {
+grid-template-columns: repeat(3, 1fr);
+@include container($width: 80%);
+}
+}
+
+.system {
+margin: 2em 1em;
+
+&__title {
+color: #192618;
+@include line($bg: rgba($clr-title, .3));
+}
+
+&__text {
+padding: .5em 1em;
+@include mq (large) {
+padding: .5em 5em;
+}
+}
+}
