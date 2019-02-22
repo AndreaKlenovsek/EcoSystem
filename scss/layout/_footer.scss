@@ -1,12 +1,36 @@
 footer {
 position: relative;
 
-max-height: 80vh;
+height: 80vh;
 }
 
 .fot-img {
 position: absolute;
 left: 0;
 right: 0;
+bottom: 0;
+
+}
+
+.fox2 {
+    position: absolute;
+    right: 0em;
+    display: none;
+
+
+    @include mq (large) {
+        bottom: 2.5em;
+        display: block;
+        height: 80px;
+        width: 150px;
+        }
+
+        @include mq (xl) {
+            bottom: 4em;
+           
+            width: 200px;
+            height: 100px;
+            }
+    
 
 }

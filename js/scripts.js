@@ -32,13 +32,15 @@ function scrollFunction() {
     
   } 
 
-  else if (screen.width < 450)  {
-    document.querySelector("nav").style.top = "0vh";
+  else if (screen.width > 650)  {
+    document.querySelector("nav").style.top = "-7vh";
     console.log("test")
   }
  
  
   else {
-    document.querySelector("nav").style.top = "-7vh";
+    
+  document.querySelector("nav").style.top = "0";
+    
   }
 }
