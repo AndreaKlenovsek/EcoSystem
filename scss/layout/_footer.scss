@@ -1,12 +1,13 @@
 footer {
 position: relative;
-background: #c8f4b3;
+background: #b2f49f;
 height: 30vh;
 text-align: center;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+color: rgba($clr-title, .8);
 
 font-family: $ff-permanent;
 @include mq(medium) {

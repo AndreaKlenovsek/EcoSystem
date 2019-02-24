@@ -91,7 +91,7 @@ nav a {
 @media (min-width: 450px) {
   nav a {
     font-weight: 700;
-    color: #479761;
+    color: rgba(25, 38, 24, 0.6);
   }
 }
 nav a:hover, nav a:focus {
@@ -199,7 +199,7 @@ nav a:hover, nav a:focus {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/info2.png);
-    background-color: #439e47;
+    background-color: #b2f49f;
   }
 }
 
@@ -241,10 +241,10 @@ nav a:hover, nav a:focus {
 
 .animals {
   padding: 4em 0;
-  background: #439e47;
+  background: #b2f49f;
 }
 .animals__title {
-  color: #fbe8a6;
+  color: rgba(25, 38, 24, 0.8);
   text-align: center;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -253,7 +253,15 @@ nav a:hover, nav a:focus {
 @media (min-width: 850px) {
   .animals__title {
     font-size: 1.8rem;
+    padding-bottom: 2em;
   }
+}
+
+.fish {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  max-width: 300px;
 }
 
 .cards {
@@ -264,7 +272,12 @@ nav a:hover, nav a:focus {
 @media (min-width: 850px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 1em;
+  }
+}
+@media (min-width: 1200px) {
+  .cards {
+    max-width: 70%;
+    margin: 0 auto;
   }
 }
 
@@ -272,20 +285,18 @@ nav a:hover, nav a:focus {
   padding: 0.5em;
   background: #fbe8a6;
   max-width: 25em;
-  margin: 1em auto;
+  margin: 2em auto;
 }
 
 .card__bg2 {
-  background: #f4976c;
-  padding: 0.5em;
-  background: #f4976c;
-  max-width: 25em;
-  margin: 1em auto;
+  background: #fbe8a6;
+  padding: 0.8em;
+  max-width: 27em;
+  margin: 0 auto;
 }
-
 .card {
   background: #68bc68;
-  padding: 3em 1.5em;
+  padding: 4em 1.5em;
   position: relative;
 }
 .card__title {
@@ -295,6 +306,18 @@ nav a:hover, nav a:focus {
 .card__text {
   color: rgba(251, 232, 166, 0.9);
   padding: 0.5em;
+}
+
+@media (min-width: 850px) {
+  .card1 {
+    padding: 6em 1.5em;
+  }
+}
+
+@media (min-width: 850px) {
+  .card2 {
+    margin-top: 0em;
+  }
 }
 
 .deco {
@@ -311,33 +334,25 @@ nav a:hover, nav a:focus {
   margin-top: 1em;
 }
 
-.btn-card1 {
+.btn-card1, .btn-card2 {
   background: #fbe8a6;
   color: rgba(25, 38, 24, 0.7);
   transition: background 350ms;
 }
-.btn-card1:hover, .btn-card1:focus {
+.btn-card1:hover, .btn-card1:focus, .btn-card2:hover, .btn-card2:focus {
   background: #fae28e;
-}
-
-.btn-card2 {
-  background: #f4976c;
-  color: rgba(25, 38, 24, 0.7);
-  transition: background 350ms;
-}
-.btn-card2:hover, .btn-card2:focus {
-  background: #f28654;
 }
 
 footer {
   position: relative;
-  background: #c8f4b3;
+  background: #b2f49f;
   height: 30vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: rgba(25, 38, 24, 0.8);
   font-family: "Permanent Marker", cursive;
 }
 @media (min-width: 850px) {

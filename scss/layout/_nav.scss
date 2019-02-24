@@ -64,7 +64,7 @@ color: $clr-yellow;
 transition: background 350ms;
 @include mq(small) {
 font-weight: $fw-bold;
-color: green(dark);
+color: rgba($clr-title, .6);
 
 }
 

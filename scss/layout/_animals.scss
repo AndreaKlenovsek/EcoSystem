@@ -1,10 +1,10 @@
 .animals {
 padding: 4em 0;
-background: #439e47;
+background: #b2f49f;
 
 
 &__title {
-color: $clr-yellow;
+color: rgba($clr-title, .8);
 text-align: center;
 text-transform: uppercase;
 font-size: 1.2rem;
@@ -12,8 +12,16 @@ letter-spacing: 2px;
 
 @include mq(medium) {
 font-size: 1.8rem;
+padding-bottom: 2em;
 }
 }
+}
+
+.fish {
+display: flex;
+justify-content: center;
+place-items: center;
+max-width: 300px;
 }
 
 .cards {
@@ -24,7 +32,9 @@ margin: 1em;
 
 @include mq(medium) {
 grid-template-columns: repeat(3,1fr);
-grid-column-gap: 1em;
+}
+@include mq(large) {
+@include container($width: 70%);
 }
 }
 
@@ -33,22 +43,28 @@ padding: .5em;
 background: $clr-yellow;
 
 max-width: 25em;
-margin: 1em auto;
+margin: 2em auto;
 }
 
 .card__bg2 {
-background: $clr-orange;
-padding: .5em;
-background: $clr-orange;
+background: $clr-yellow;
+padding: .8em;
 
-max-width: 25em;
-margin: 1em auto;
+
+
+max-width: 27em;
+margin: 0 auto;
+@include mq(medium) {
+
+
+}
 }
 
 .card {
 background: #68bc68;
-padding: 3em 1.5em;
+padding: 4em 1.5em;
 position: relative;
+
 
 
 &__title {
@@ -59,6 +75,20 @@ letter-spacing: 2px;
 &__text {
 color: rgba($clr-yellow, .9);
 padding: .5em;
+}
+}
+
+.card1 {
+@include mq(medium) {
+padding: 6em 1.5em;
+}
+}
+
+.card2 {
+@include mq(medium) {
+
+margin-top: 0em;
+
 }
 }
 
@@ -76,7 +106,7 @@ display: inline-block;
 margin-top: 1em;
 }
 
-.btn-card1 {
+.btn-card1, .btn-card2 {
 background: $clr-yellow;
 color: rgba($clr-title, .7);
 transition: background 350ms;
@@ -86,12 +116,3 @@ background: darken($clr-yellow, 5)
 } 
 }
 
-.btn-card2 {
-background: $clr-orange;
-color: rgba($clr-title, .7);
-transition: background 350ms;
-
-&:hover, &:focus {
-background: darken($clr-orange, 5)
-} 
-}
