@@ -17,12 +17,7 @@ padding-bottom: 2em;
 }
 }
 
-.fish {
-display: flex;
-justify-content: center;
-place-items: center;
-max-width: 300px;
-}
+
 
 .cards {
 display: grid;
@@ -38,32 +33,23 @@ grid-template-columns: repeat(3,1fr);
 }
 }
 
-.card__bg {
-padding: .5em;
-background: $clr-yellow;
 
-max-width: 25em;
-margin: 2em auto;
-}
-
-.card__bg2 {
-background: $clr-yellow;
-padding: .8em;
-
-
-
-max-width: 27em;
-margin: 0 auto;
-@include mq(medium) {
-
-
-}
-}
 
 .card {
 background: #68bc68;
-padding: 4em 1.5em;
+padding: 2em 1.5em;
 position: relative;
+border: .8em solid $clr-yellow;
+
+margin: 1em auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+place-items: center;
+
+@include mq (small) {
+    max-width: 400px;    
+}
 
 
 
@@ -76,37 +62,43 @@ letter-spacing: 2px;
 color: rgba($clr-yellow, .9);
 padding: .5em;
 }
+
+ 
 }
 
-.card1 {
+.accent {
 @include mq(medium) {
-padding: 6em 1.5em;
-}
-}
-
-.card2 {
-@include mq(medium) {
-
-margin-top: 0em;
+padding-top: 4em;
+padding-bottom: 4em;
+margin-top: -2em;
 
 }
 }
+
+
 
 .deco {
 position: relative;
 top: -1em;
+max-width: 60px;
+margin: 0 auto;
+
 }
 
-.btn-card1, .btn-card2 {
+.fish {
+align-items: flex-start;
+@include mq(medium) {
+max-width: 300px;
+}
+}
+
+.btn {
 text-decoration: none;
 text-transform: uppercase;
 letter-spacing: 2px;
 padding: .8em 1.5em;
 display: inline-block;
 margin-top: 1em;
-}
-
-.btn-card1, .btn-card2 {
 background: $clr-yellow;
 color: rgba($clr-title, .7);
 transition: background 350ms;

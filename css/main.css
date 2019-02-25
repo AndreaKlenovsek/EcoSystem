@@ -257,13 +257,6 @@ nav a:hover, nav a:focus {
   }
 }
 
-.fish {
-  display: flex;
-  justify-content: center;
-  place-items: center;
-  max-width: 300px;
-}
-
 .cards {
   display: grid;
   text-align: center;
@@ -281,23 +274,21 @@ nav a:hover, nav a:focus {
   }
 }
 
-.card__bg {
-  padding: 0.5em;
-  background: #fbe8a6;
-  max-width: 25em;
-  margin: 2em auto;
-}
-
-.card__bg2 {
-  background: #fbe8a6;
-  padding: 0.8em;
-  max-width: 27em;
-  margin: 0 auto;
-}
 .card {
   background: #68bc68;
-  padding: 4em 1.5em;
+  padding: 2em 1.5em;
   position: relative;
+  border: 0.8em solid #fbe8a6;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+}
+@media (min-width: 450px) {
+  .card {
+    max-width: 400px;
+  }
 }
 .card__title {
   color: #192618;
@@ -309,37 +300,41 @@ nav a:hover, nav a:focus {
 }
 
 @media (min-width: 850px) {
-  .card1 {
-    padding: 6em 1.5em;
-  }
-}
-
-@media (min-width: 850px) {
-  .card2 {
-    margin-top: 0em;
+  .accent {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    margin-top: -2em;
   }
 }
 
 .deco {
   position: relative;
   top: -1em;
+  max-width: 60px;
+  margin: 0 auto;
 }
 
-.btn-card1, .btn-card2 {
+.fish {
+  align-items: flex-start;
+}
+@media (min-width: 850px) {
+  .fish {
+    max-width: 300px;
+  }
+}
+
+.btn {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 0.8em 1.5em;
   display: inline-block;
   margin-top: 1em;
-}
-
-.btn-card1, .btn-card2 {
   background: #fbe8a6;
   color: rgba(25, 38, 24, 0.7);
   transition: background 350ms;
 }
-.btn-card1:hover, .btn-card1:focus, .btn-card2:hover, .btn-card2:focus {
+.btn:hover, .btn:focus {
   background: #fae28e;
 }
 
